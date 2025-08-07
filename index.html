@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AbhinavPortfolio</title>
+    <link rel="icon" type="image/png" href="./favicon.png" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-black text-white">
+    <div id="page1">
+      <div id="hero">
+        <!-- Header -->
+        <header
+          class="flex justify-between items-center p-4 border-b border-gray-700 mx-4 sm:mx-10 relative"
+        >
+          <div class="text-3xl font-bold text-white">{A}</div>
+
+          <!-- Desktop Nav -->
+          <nav class="hidden sm:flex space-x-6 text-lg">
+            <a href="#about" class="hover:text-green-400">About</a>
+            <a href="#skills" class="hover:text-green-400">Skill</a>
+            <a href="#projects" class="hover:text-green-400">Projects</a>
+            <a href="#contact" class="hover:text-green-400">Contact</a>
+          </nav>
+
+          <!-- Mobile Menu Button -->
+          <button
+            id="menu-btn"
+            class="sm:hidden text-white text-2xl focus:outline-none"
+          >
+            ☰
+          </button>
+
+          <!-- Mobile Nav -->
+          <div
+            id="mobile-menu"
+            class="hidden absolute top-full left-0 w-full bg-black border-t border-gray-700 flex-col items-start p-4 space-y-4 text-lg sm:hidden z-10"
+          >
+            <a href="#about" class="hover:text-green-400">About</a>
+            <a href="#skills" class="hover:text-green-400">Skill</a>
+            <a href="#projects" class="hover:text-green-400">Projects</a>
+            <a href="#contact" class="hover:text-green-400">Contact</a>
+          </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section
+          class="flex flex-col mt-16 sm:mt-20 items-start min-h-[67vh] px-5 lg:px-24"
+        >
+          <h1 class="font-bold leading-tight">
+            <span class="text-[#ADFF2F] text-2xl sm:text-4xl"
+              >Hey there!, I'm-</span
+            ><br />
+            <span class="text-white text-5xl sm:text-6xl md:text-8xl"
+              >Abhinav<span>.</span></span
+            >
+          </h1>
+
+          <p class="text-xl sm:text-2xl text-[#B3ADAD] mt-4">
+            <strong class="text-white">Software Engineer.</strong> A self-taught
+            developer with an interest in <br class="hidden sm:block" />
+            Computer Science.
+          </p>
+
+          <div class="mt-6 space-y-1 text-base sm:text-lg">
+            <p class="text-[#808080] text-md">
+              🚀 Currently specializing in Frontend (React)
+            </p>
+            <p class="text-[#808080] text-md">
+              ⚡ Frontend Engineer at
+              <a
+                href="https://edu.ieee.org/in-mrce/"
+                class="text-[#ADFF2F] font-semibold"
+                target="_blank"
+                >IEEE MRU</a
+              >
+            </p>
+          </div>
+
+          <div class="flex flex-wrap gap-4 mt-8 text-white">
+            <a
+              href="https://github.com/Abhinav9971"
+              target="_blank"
+              class="border border-white px-4 py-2 rounded-full hover:bg-white hover:text-black transition"
+              >GitHub</a
+            >
+            <a
+              href="https://www.linkedin.com/in/abhinav-aa388b288/"
+              target="_blank"
+              class="border border-white px-4 py-2 rounded-full hover:bg-white hover:text-black transition"
+              >LinkedIn</a
+            >
+            <a
+              href="./Portfolio.pdf"
+              target="_blank"
+              class="border border-white px-4 py-2 rounded-full hover:bg-white hover:text-black transition"
+              download="Abhinav_Resume.pdf"
+              >Download CV</a
+            >
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Other Sections -->
+    <div id="page2" class="bg-black text-white py-20 px-5 lg:px-24">
+      <div
+        id="about"
+        class="flex flex-col lg:flex-row items-center justify-between gap-10"
+      >
+        <!-- Text Content -->
+        <div class="lg:w-1/2">
+          <h2 class="text-4xl font-bold mb-6 text-white">⚡About Me</h2>
+          <p class="text-gray-300 text-xl leading-relaxed">
+            Hi,I am Abhinav,currently pursuing a Bachelor’s degree in Technology
+            in Computer Science at
+            <a
+              href="https://manavrachna.edu.in/"
+              target="_blank"
+              class="text-[#ADFF2F]"
+              >Manav Rachna University.</a
+            >
+            I am a determined and enthusiastic person with a keen interest in
+            exploring new domains. My curiosity drives me to constantly seek out
+            challenges and learn about emerging technologies, pushing the
+            boundaries of what I can achieve. Whether it’s through projects,
+            research, or collaborations, I am always eager to expand my
+            knowledge and skills.
+          </p>
+        </div>
+
+        <!-- Image -->
+        <div class="lg:w-1/2 flex justify-center">
+          <img
+            src="./d143ff36a5bb5b6e25630eae31b2acae.png"
+            alt="Abhinav's profile"
+            class="rounded-2xl w-72 sm:w-96 object-cover shadow-lg"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div id="page3">
+      <div id="skills" class="bg-black text-white py-20 px-5 lg:px-24">
+        <h2 class="text-4xl font-bold text-center mb-12">⚙️ Skills</h2>
+
+        <div
+          class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 justify-items-center"
+        >
+          <!-- Skill cards -->
+          <div class="flex flex-col items-center">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+              class="w-12 h-12"
+            />
+            <p class="mt-2">HTML</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+              class="w-12 h-12"
+            />
+            <p class="mt-2">CSS</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              class="w-12 h-12"
+            />
+            <p class="mt-2">JavaScript</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+              class="w-12 h-12"
+            />
+            <p class="mt-2">React</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+              class="w-12 h-12"
+            />
+            <p class="mt-2">Java</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+              class="w-12 h-12"
+            />
+            <p class="mt-2">Git</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+              class="w-12 h-12"
+            />
+            <p class="mt-2">GitHub</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+              class="w-12 h-12"
+            />
+            <p class="mt-2">Node.js</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+              class="w-12 h-12 invert"
+            />
+            <p class="mt-2">Express</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+              class="w-12 h-12"
+            />
+            <p class="mt-2">MongoDB</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+              class="w-12 h-12"
+            />
+            <p class="mt-2">Firebase</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+              class="w-12 h-12"
+            />
+            <p class="mt-2">Tailwind</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="page4">
+      <section id="projects" class="bg-black text-white py-20 px-4 lg:px-24">
+        <h2 class="text-4xl font-bold text-center mb-12">Projects</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+          <!-- Project Card 1 -->
+          <div
+            class="bg-[#1a1a1a] rounded-2xl overflow-hidden shadow-xl project-card"
+          >
+            <img
+              src="./images/ghsr.jpg"
+              alt="GHRS Medical Center"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6 space-y-2">
+              <h3 class="text-2xl font-bold">GHRS Medical Center</h3>
+              <p class="text-gray-300 text-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                delectus consequuntur consequatur vitae earum fugiat alias
+                tempora nemo ducimus perferendis quod, dolorum corporis error
+                eveniet rem reiciendis impedit provident iure.
+              </p>
+              <a
+                href="#"
+                target="_blank"
+                class="inline-block mt-2 text-green-400 hover:text-green-300 font-semibold"
+                >Visit Site →</a
+              >
+            </div>
+          </div>
+
+          <!-- Project Card 2 -->
+          <div
+            class="bg-[#1a1a1a] rounded-2xl overflow-hidden shadow-xl project-card"
+          >
+            <img
+              src="./images/vartalaap.jpg"
+              alt="DitMyBit"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6 space-y-2">
+              <h3 class="text-2xl font-bold">Vartaalaap</h3>
+              <p class="text-gray-300 text-sm">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Facere, unde minima architecto eveniet sed, soluta neque rerum
+                corrupti dolore autem ab! Fuga voluptatibus sed tenetur corporis
+                sint, odio veniam similique.
+              </p>
+              <a
+                href="#"
+                target="_blank"
+                class="inline-block mt-2 text-green-400 hover:text-green-300 font-semibold"
+                >Visit Site →</a
+              >
+            </div>
+          </div>
+
+          <!-- Project Card 3 -->
+          <div
+            class="bg-[#1a1a1a] rounded-2xl overflow-hidden shadow-xl project-card"
+          >
+            <img
+              src="./images/brevit.png"
+              alt="Brevit"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6 space-y-2">
+              <h3 class="text-2xl font-bold">Brevit</h3>
+              <p class="text-gray-300 text-sm">
+                AI-based tool for managing, analyzing, and scheduling social
+                media content.
+              </p>
+              <a
+                href="#"
+                target="_blank"
+                class="inline-block mt-2 text-green-400 hover:text-green-300 font-semibold"
+                >Visit Site →</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="page5">
+      <div id="contact" class="bg-black text-white py-16">
+        <div
+          id="page3"
+          class="max-w-4xl mx-auto flex flex-col items-center text-center px-4 relative"
+        >
+          <!-- Optional background image (adjust positioning as needed) -->
+          <img
+            src="./images/bgimg.svg"
+            alt="image"
+            class="h-[200px] invert-[0.1] absolute -z-10 left-[55%]"
+          />
+
+          <div id="page3-sub" class="mb-8">
+            <h1 class="text-8xl md:text-5xl font-bold mb-4">Keep In Touch.</h1>
+            <p class="text-lg max-w-lg">
+              I'm currently specializing in Front-end Development. Feel free to
+              get in touch and talk more about your projects.
+            </p>
+          </div>
+
+          <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            class="w-3/4 max-w-md space-y-4"
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value="b25a1dc7-2db7-40e6-9f5b-5168d28c4f45"
+            />
+
+            <input
+              type="text"
+              name="name"
+              required
+              placeholder="Name"
+              class="w-full p-3 bg-black border border-gray-400 rounded focus:outline-none"
+            />
+
+            <input
+              type="email"
+              name="email"
+              required
+              placeholder="Email"
+              class="w-full p-3 bg-black border border-gray-400 rounded focus:outline-none"
+            />
+
+            <textarea
+              name="message"
+              required
+              rows="5"
+              placeholder="Feedback/Message"
+              class="w-full p-3 bg-black border border-gray-400 rounded focus:outline-none"
+            ></textarea>
+
+            <button
+              type="submit"
+              class="w-full bg-blue-400 hover:bg-blue-500 text-white font-semibold py-2 px-4 rounded transition-all"
+            >
+              Send
+            </button>
+          </form>
+
+          <p class="text-xs mt-10 text-gray-400">
+            Designed and Developed by
+            <span class="font-semi-bold text-white">Abhinav</span>. Built with
+            ❤️ & React. Hosted on GitHub.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS for toggle -->
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuBtn.addEventListener("click", () => {
+        if (mobileMenu.classList.contains("hidden")) {
+          mobileMenu.classList.remove("hidden");
+          mobileMenu.classList.add("flex", "slide-down");
+        } else {
+          mobileMenu.classList.add("hidden");
+          mobileMenu.classList.remove("flex", "slide-down");
+        }
+      });
+    </script>
+  </body>
+</html>
